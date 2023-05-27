@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User Registration</title>
+    <style>
+      /* Basic CSS for centering the form */
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+        background: url("https://www.artofliving.org/sites/www.artofliving.org/files/styles/original_image/public/Blog_34_yoga-background_4.jpg?itok=Okj0tP7m")
+          no-repeat center center fixed;
+        background-size: cover;
+      }
+
+      .registration-form {
+        width: 300px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+      }
+
+      .registration-form h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .registration-form input[type="text"],
+      .registration-form input[type="email"],
+      .registration-form input[type="tel"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      .registration-form input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="registration-form">
+      <h2>User Registration</h2>
+      <form action="submit.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <input type="submit" value="Register" />
+      </form>
+    </div>
+  </body>
+</html>
